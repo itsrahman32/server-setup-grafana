@@ -1,9 +1,9 @@
 global:
   resolve_timeout: 5m
   smtp_smarthost: 'smtp.gmail.com:587'
-  smtp_from: 'itsmemrrahmankhan2244@gmail.com'
-  smtp_auth_username: 'itsmemrrahmankhan2244@gmail.com'
-  smtp_auth_password: 'kawt oxio dxgy jvxz'   # Use Gmail App Password, not your main password
+  smtp_from: 'your@gmail.com'
+  smtp_auth_username: 'your@gmail.com'
+  smtp_auth_password: 'your app password'   # Use Gmail App Password, not your main password
   smtp_require_tls: true
 
 route:
@@ -12,5 +12,5 @@ route:
 receivers:
   - name: 'email-alert'
     email_configs:
-      - to: 'iimamuddindhobi@gmail.com'
+      - to: 'target@gmail'
         send_resolved: true

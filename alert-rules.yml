@@ -9,7 +9,7 @@ groups:
           severity: warning
         annotations:
           summary: "High CPU usage on {{ $labels.instance }}"
-          description: "CPU usage is above 80% for more than 2 minutes."
+          description: "CPU usage is above 80% for more than 5s (TESTING ALERT)."
 
       - alert: HighMemoryUsage
         expr: ((node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes) * 100 > 5
